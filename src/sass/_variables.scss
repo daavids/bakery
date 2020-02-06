@@ -1,0 +1,23 @@
+// Bootstrap variables
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext,latin-ext');
+
+$theme-colors: (
+    "primary": #D33627,
+    "secondary": #CB8346,
+    "light": #E8E8E3,
+    "light-accent": #828082,
+    "dark": #363847
+);
+
+$spacer: 1rem;
+
+$enable-shadows: true;
+$enable-rounded: true;
+$enable-gradients: true;
+$enable-transitions: true;
+$enable-responsize-font-sizes: true;
+
+
+// Other variables
+$flag-icon-css-path: '/dist/images/vendor/flag-icon-css/flags';
