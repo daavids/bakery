@@ -1,14 +1,4 @@
-@charset "UTF-8";
-.fa, .fas, .far {
-  font-family: "FontAwesome" !important;
-  font-weight: 900;
-}
-
-.fab {
-  font-family: "FontAwesome" !important;
-  font-weight: 400;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap&subset=cyrillic-ext,latin-ext);@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -43,7 +33,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Source Sans Pro", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -66,7 +56,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5747,7 +5737,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5849,7 +5839,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -17885,4 +17875,119 @@ readers do not read off random characters that represent icons */
   overflow: visible;
   position: static;
   width: auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding-bottom: 5rem;
+}
+
+hr {
+  border-top-color: #363847;
+}
+
+.fa, .fas, .far {
+  font-family: "FontAwesome" !important;
+  font-weight: 900;
+}
+
+.fab {
+  font-family: "FontAwesome" !important;
+  font-weight: 400;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 23px;
+  border: 1px solid #e6e6e6;
+}
+
+.locale-picker {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 1.25rem 1.25rem 0 auto;
+}
+.locale-picker .flag-icon {
+  margin-left: 0.5rem;
+}
+
+.primary-logo {
+  margin: 0 auto 1.25rem auto;
+  max-width: 240px;
+  height: auto;
+}
+
+.primary-nav {
+  text-align: center;
+}
+.primary-nav .primary-nav-links {
+  margin: 1.5rem auto 0 auto;
+  font-size: 1.25rem;
+}
+.primary-nav .primary-nav-links a.nav-link {
+  color: #363847;
+}
+.primary-nav .primary-nav-links a.nav-link:hover, .primary-nav .primary-nav-links a.nav-link:focus, .primary-nav .primary-nav-links a.nav-link.active {
+  color: #D33627;
+}
+.primary-nav .navbar-toggler {
+  border: 1px solid #D33627;
+  margin: 1.25rem 0 0 auto;
+}
+.primary-nav .navbar-toggler .navbar-toggler-btn {
+  color: #D33627;
+}
+
+@media (min-width: 768px) {
+  .primary-nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  .primary-nav-links li.nav-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .locale-picker-mobile, .navbar-collapse > hr {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .primary-logo, .primary-nav > hr, .locale-picker {
+    display: none;
+  }
+}
+.footer-socials {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-socials h5 {
+  margin: 0 1rem;
+}
+.footer-socials i.fab {
+  font-size: 28px;
 }

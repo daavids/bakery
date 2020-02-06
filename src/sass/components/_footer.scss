@@ -1,0 +1,10 @@
+.footer-socials {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h5 { margin: 0 1rem; }
+    i.fab { font-size: 28px; }
+}

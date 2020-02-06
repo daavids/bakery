@@ -1,0 +1,48 @@
+.locale-picker {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 1.25rem 1.25rem 0 auto;
+    .flag-icon { margin-left: 0.5rem; }
+}
+
+.primary-logo {
+    margin: 0 auto 1.25rem auto;
+    max-width: 240px;
+    height: auto;
+}
+
+.primary-nav {
+    text-align: center;
+    .primary-nav-links {
+        margin: 1.5rem auto 0 auto;
+        font-size: 1.25rem;
+        a.nav-link {
+            color: $dark;
+            &:hover, &:focus, &.active { color: $primary; }
+        }
+    }
+    .navbar-toggler {
+        border: 1px solid $primary;
+        margin: 1.25rem 0 0 auto;
+        .navbar-toggler-btn { color: $primary; }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .primary-nav-links {
+        display: flex;
+        justify-content: space-around;
+        li.nav-item {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+    .locale-picker-mobile, .navbar-collapse > hr { display: none; }
+
+}
+
+@include media-breakpoint-down(sm) {
+    .primary-logo, .primary-nav > hr, .locale-picker { display: none; }
+}
