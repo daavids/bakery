@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./fonts";
 
 @import "bootstrap";
 
@@ -7,3 +6,7 @@
 // @include flag-icon(en);
 
 @import "@fortawesome/fontawesome-free";
+
+@import "./layout";
+@import "./content";
+@import "./components";
