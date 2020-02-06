@@ -11,6 +11,12 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.setPublicPath('dist');
+
+mix.options({
+    processCssUrls: false
+});
+
 mix.js('src/js/app.js', 'dist/js/')
     .sass('src/sass/app.scss', 'dist/css/')
     .copyDirectory('src/img', 'dist/img');
