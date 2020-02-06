@@ -39,10 +39,10 @@
             padding-right: 0.5rem;
         }
     }
-    .locale-picker-mobile, .navbar-collapse > hr { display: none; }
+    .locale-picker-mobile { display: none; }
 
 }
 
 @include media-breakpoint-down(sm) {
-    .primary-logo, .primary-nav > hr, .locale-picker { display: none; }
+    .primary-logo, .locale-picker { display: none; }
 }
