@@ -17900,6 +17900,10 @@ body {
   padding-bottom: 5rem;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 hr {
   border-top-color: #363847;
 }
@@ -18022,6 +18026,9 @@ hr {
 }
 .card-links .card-footer h5 a {
   color: #363847;
+}
+.card-links .card-footer h5 a:hover, .card-links .card-footer h5 a:focus, .card-links .card-footer h5 a.active {
+  color: #D33627;
 }
 
 @media (min-width: 576px) {
