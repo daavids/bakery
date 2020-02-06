@@ -1,5 +1,9 @@
 @import "./variables";
+@import "./fonts";
+
 @import "bootstrap";
 
 @import "~flag-icon-css/sass/flag-icon.scss";
 // @include flag-icon(en);
+
+@import "@fortawesome/fontawesome-free";

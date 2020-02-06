@@ -2,13 +2,27 @@
 
 // @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic-ext,latin-ext');
 
+$dark: #363847;
+$light: #FFFFFF;
+// $light: #E8E8E3;
+
 $theme-colors: (
     "primary": #D33627,
     "secondary": #CB8346,
-    "light": #E8E8E3,
+    "light": $light,
     "light-accent": #828082,
-    "dark": #363847
+    "dark": $dark
 );
+
+$body-bg: $light;
+$body-color: $dark;
+
+$border-color: darken($body-bg, 10%);
+$list-group-border-color: $border-color;
+$card-border-color: $border-color;
+
+$input-border-color: lighten($body-color, 40%);
+$input-placeholder-color: lighten($body-color, 30%);
 
 $spacer: 1rem;
 
@@ -18,6 +32,9 @@ $enable-gradients: true;
 $enable-transitions: true;
 $enable-responsize-font-sizes: true;
 
+// $font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base:1rem;
 
 // Other variables
 $flag-icon-css-path: '/dist/images/vendor/flag-icon-css/flags';
+$fa-font-path: '../webfonts';

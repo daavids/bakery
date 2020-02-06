@@ -19,7 +19,8 @@ mix.options({
 
 mix.js('src/js/app.js', 'dist/js/')
     .sass('src/sass/app.scss', 'dist/css/')
-    .copyDirectory('src/img', 'dist/img');
+    .copyDirectory('src/img', 'dist/img')
+    .copyDirectory('src/webfonts', 'dist/webfonts');
 
 // Full API
 // mix.js(src, output);
