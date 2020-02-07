@@ -1,0 +1,23 @@
+.news-title, .news-info { margin-bottom: 1rem; }
+.news-date {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+.news-item {
+    .return-link {
+        font-size: 1.15rem;
+        i {
+            font-weight: 400;
+            margin-right: 0.5rem;
+        }
+    }
+    .news-title { margin-bottom: 1.5rem; }
+}
+.news-content {
+    text-align: justify;
+    margin: 2.5rem auto;
+    img {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
