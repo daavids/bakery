@@ -6,44 +6,8 @@
     margin-bottom: 3rem;
 }
 
-.card-links {
-    .card-deck {
-        margin: 0;
-        justify-content: space-between;
-    }
-    .card-body {
-        height: 200px;
-        background-position: center center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-    .card-footer {
-        background: $light-accent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        h5 {
-            margin-bottom: 0;
-            a {
-                color: $dark;
-                &:hover, &:focus, &.active { color: $primary; }
-            }
-        }
-    }
-}
-
-@include media-breakpoint-up(sm) {
-    .card-links {
-        .card {
-            &:first-child { margin-left: 0; }
-            &:last-child { margin-right: 0; }
-        }
-    }
-}
 @include media-breakpoint-down(md) {
     .banner { height: 25vh; }
-    .card-links .card-body { height: 120px; }
 }
 
 @include media-breakpoint-only(sm) {
@@ -52,5 +16,4 @@
 
 @include media-breakpoint-only(xs) {
     .banner { margin-bottom: 6rem; }
-    .card-links .card-body { height: 30vh; }
 }
