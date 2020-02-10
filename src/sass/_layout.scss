@@ -19,4 +19,20 @@ body {
 
 a { text-decoration: none !important; }
 
-hr { border-top-color: $dark; }
+hr {
+    border-top-color: $dark;
+    width: 100%;
+}
+
+.header {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    background: #{$secondary}50;
+    hr {
+        margin-bottom: -1rem;
+    }
+}
+
+.btn {
+    font-weight: bold;
+}
