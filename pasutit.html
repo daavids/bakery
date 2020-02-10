@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Pasūtīt | Gourmet Bakery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="dist/css/app.css">
+	</head>
+  	<body>
+	  	<div class="header">
+			<ul class="locale-picker">
+				<li><a href="#"><span class="flag-icon flag-icon-lv"></span></a></li>
+				<li><a href="#"><span class="flag-icon flag-icon-ru"></span></a></li>
+				<li><a href="#"><span class="flag-icon flag-icon-gb"></span></a></li>
+			</ul>
+			<div class="container-lg primary-nav">
+				<img src="dist/img/logo.png" alt="Bakery logo" class="lazy primary-logo">
+				<nav class="navbar navbar-expand-md primary-nav">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+						aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="far fa-bars navbar-toggler-btn"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav primary-nav-links">
+							<li class="nav-item"><a href="index.html" class="nav-link">Sākums</a></li>
+                            <li class="nav-item"><a href="pasutit.html" class="nav-link">Pasūtīt</a></li>
+							<li class="nav-item"><a href="jaunumi.html" class="nav-link">Jaunumi</a></li>
+							<li class="nav-item"><a href="produkti.html" class="nav-link">Produkti</a></li>
+							<li class="nav-item"><a href="par-mums.html" class="nav-link">Par mums</a></li>
+							<li class="nav-item"><a href="akcijas.html" class="nav-link active">Akcijas</a></li>
+							<li class="nav-item"><a href="kontakti.html" class="nav-link">Kontakti</a></li>
+						</ul>
+						<ul class="navbar-nav locale-picker-mobile">
+							<li class="nav-item"><a href="#" class="nav-link"><span class="flag-icon flag-icon-lv"></span></a></li>
+							<li class="nav-item"><a href="" class="nav-link"><span class="flag-icon flag-icon-ru"></span></a></li>
+							<li class="nav-item"><a href="" class="nav-link"><span class="flag-icon flag-icon-gb"></span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<hr>
+		</div>
+		<div class="content">
+			<div class="container">
+                <h2 class="page-title">Pasūtīt</h2>
+                <div class="row">
+                    <div class="col-12 order-form-wrapper">
+                        <form action="#" method="post">
+							<!-- Product info -->
+							<h4>Produkts</h4>
+							<hr>
+							<div class="form-row">
+								<div class="form-group col">
+									<label for="productInput">Produkts</label>
+									<select name="product" id="productInput" class="form-control" required>
+										<option value="0" disabled selected>Izvēlieties produktu</option>
+										<option value="1" data-price="5.00">Produkts 1 - 5.00 &euro;</option>
+										<option value="2" data-price="4.50">Produkts 2 - 4.50 &euro;</option>
+										<option value="3" data-price="3.00">Produkts 3 - 3.00 &euro;</option>
+										<option value="4" data-price="2.75">Produkts 4 - 2.75 &euro;</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-row mb-5">
+								<div class="form-group col-md">
+									<label for="countInput">Skaits</label>
+									<input type="number" name="count" id="countInput" class="form-control"
+										value="1" min="1" step="1" pattern="\d*" autocomplete="count" required>
+								</div>
+								<div class="form-group col-md">
+									<label for="sumInput">Kopsumma</label>
+									<input type="text" name="total" id="sumInput" class="form-control" readonly>
+								</div>
+							</div>
+							<h4>Piegādes informācija</h4>
+							<hr>
+							<!-- Person & delivery info -->
+							<div class="form-row">
+								<div class="form-group col-md">
+									<label for="nameInput">Vārds</label>
+									<input type="text" name="name" id="nameInput" class="form-control"
+										placeholder="Vārds" autocomplete="fname" required>
+								</div>
+								<div class="form-group col-md">
+									<label for="surnameInput">Uzvārds</label>
+									<input type="text" name="surname" id="surnameInput" class="form-control"
+										placeholder="Uzvārds" autocomplete="lname" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md">
+									<label for="phoneInput">Tālrunis</label>
+									<input type="tel" name="phone" id="phoneInput" class="form-control"
+										placeholder="Tālrunis" autocomplete="phone" required>
+								</div>
+								<div class="form-group col-md">
+									<label for="emailInput">E-pasta adrese</label>
+									<input type="email" name="email" id="emailInput" class="form-control"
+										placeholder="E-pasta adrese" autocomplete="email" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col">
+									<label for="addressInput">Piegādes adrese</label>
+									<input type="text" name="address" id="addressInput" class="form-control"
+										placeholder="Piegādes adrese" autocomplete="address" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col">
+									<label for="infoInput">Papildus informācija</label>
+									<textarea name="info" id="infoInput" cols="30" rows="6" class="form-control"></textarea>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-12 text-center">
+									<button type="submit" class="btn btn-success mx-2">Pasūtīt</button>
+									<a href="index.html" class="btn btn-outline-danger mx-2">Atcelt</a>
+								</div>
+							</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<hr>
+				<nav class="navbar footer-nav">
+					<ul class="footer-socials">
+						<li class="nav-item"><h5>Seko Gourmet Bakery</h5></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook"></i></a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<script type="text/javascript" src="dist/js/app.js"></script>
+		<script type="text/javascript" src="dist/js/order.js"></script>
+	</body>
+</html>
