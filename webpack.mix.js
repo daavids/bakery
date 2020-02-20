@@ -18,7 +18,7 @@ mix.options({
 });
 
 mix.js('src/js/app.js', 'dist/js/')
-    .js('src/js/order.js', 'dist/js')
+    .js('src/js/order.js', 'dist/js/')
     .sass('src/sass/app.scss', 'dist/css/')
     .copyDirectory('src/img', 'dist/img')
     .copyDirectory('src/webfonts', 'dist/webfonts');

@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     productInput.onchange = calcPrice;
     countInput.onchange = calcPrice;
+
+    $('#dateInput').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
 });
