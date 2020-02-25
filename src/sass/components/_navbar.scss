@@ -20,13 +20,16 @@
         font-size: 1.25rem;
         a.nav-link {
             color: $dark;
-            &:hover, &:focus, &.active { color: $primary; }
+            &:hover, &:focus, &.active { color: $light; }
         }
     }
     .navbar-toggler {
-        border: 1px solid $primary;
+        border: 1px solid $light;
         margin: 1.25rem 0 0 auto;
-        .navbar-toggler-btn { color: $primary; }
+        .navbar-toggler-btn {
+            color: $light;
+            font-weight: 400 !important;
+        }
     }
 }
 
